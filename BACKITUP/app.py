@@ -73,18 +73,20 @@ root.title('Backup Application')
 root.geometry('400x200')
 root.configure(bg='lightblue')
 
-tk.Label(root, text="Backup Interval (in seconds):", font=('Segoe UI',14), bg='lightblue', fg='darkblue').grid(row=0, column=0, padx=10, pady=10)
-interval_entry = tk.Entry(root, font=('Comic Sans MS', 14))
+tk.Label(root, text="Backup Interval (in seconds):", font=('Segoe UI',14), bg='lightblue', fg='black').grid(row=0, column=0, padx=10, pady=10)
+interval_entry = tk.Entry(root, font=('Segoe UI', 14))
 interval_entry.grid(row=0, column=1, padx=10, pady=10)
 
-tk.Label(root, text="Folder Path:", font=('Comic Sans MS', 14), bg='lightblue', fg='darkblue').grid(row=1, column=0, padx=10, pady=10)
-folder_path_entry = tk.Entry(root, font=('Comic Sans MS', 14))
+tk.Label(root, text="Folder Path:", font=('Segoe UI', 14), bg='lightblue', fg='black').grid(row=1, column=0, padx=10, pady=10)
+folder_path_entry = tk.Entry(root, font=('Segoe UI', 14))
 folder_path_entry.grid(row=1, column=1, padx=10, pady=10)
 
-select_directory_button = tk.Button(root, text="Select Directory", command=select_directory, font=('Comic Sans MS', 14), bg='lightgreen', fg='darkgreen')
+select_directory_button = tk.Button(root, text="Select Directory", command=select_directory, font=('Segoe UI', 14,'bold'), bg='darkblue', fg='white')
 select_directory_button.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
 
-start_backup_button = tk.Button(root, text="Start Backup", command=lambda: backup_files(int(interval_entry.get()), folder_path_entry.get()), font=('Comic Sans MS', 14), bg='lightgreen', fg='darkgreen')
+start_backup_button = tk.Button(root, text="Start Backup", command=lambda: backup_files(int(interval_entry.get()), folder_path_entry.get()), font=('Segoe UI', 14,'bold'), bg='darkblue', fg='white')
 start_backup_button.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
 
 root.mainloop()
+
+
