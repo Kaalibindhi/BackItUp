@@ -7,4 +7,4 @@ The main features of this application include:
 4. **Tkinter GUI**: The application has a graphical user interface built with Tkinter. Users can select the directory to backup and set the backup interval through the GUI.
 
 
-This was done by my team Radical Skadattle for the Tink Her Hack 2.0. which consists of Aditi Asok, Aimee Jobi, Amitha Thomas. 
+This was done by my team Radical Skadattle for the Tink Her Hack 2.0. which consists of Adithi Asok, Aimee Jobi, Amitha Thomas. 
